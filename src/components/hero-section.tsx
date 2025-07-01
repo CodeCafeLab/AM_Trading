@@ -1,18 +1,19 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import a from './../images/1.jpg'
 
 export default function HeroSection() {
   return (
     <section id="home" className="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center text-white">
       <div className="absolute inset-0 bg-black/50 z-10" />
       <Image
-        src="/images/2.jpg"
+        src={a}
         data-ai-hint="diesel generator"
         fill
         style={{ objectFit: 'cover' }}
         alt="Hero background with a large diesel generator"
-        className="z-0"
-        priority
+
+
       />
       <div className="container relative z-20 px-4">
         <h1 className="text-4xl md:text-6xl font-extrabold font-headline tracking-tight">

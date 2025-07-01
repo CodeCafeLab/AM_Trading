@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import a from './../images/2.jpg'
 
 export default function AboutSection() {
   return (
@@ -18,7 +19,7 @@ export default function AboutSection() {
             </p>
           </div>
           <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
-              <Image src="/images/1.jpg" data-ai-hint="cooper generator" fill style={{ objectFit: 'contain' }} alt="Cooper Corp 5 kVA diesel generator" />
+            <Image src={a} data-ai-hint="cooper generator" fill style={{ objectFit: 'contain' }} alt="Cooper Corp 5 kVA diesel generator" />
           </div>
         </div>
       </div>
