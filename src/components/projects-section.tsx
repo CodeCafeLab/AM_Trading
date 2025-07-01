@@ -1,12 +1,13 @@
 import Image from 'next/image';
+import { Card } from '@/components/ui/card';
 
 const projects = [
-  { src: 'https://placehold.co/600x400.png', alt: 'Industrial Generator Installation', hint: 'industrial generator' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Commercial Power Solution', hint: 'commercial building' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Residential Backup System', hint: 'residential generator' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Large Scale Power Plant', hint: 'power plant' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Generator Maintenance', hint: 'generator maintenance' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Site Assessment', hint: 'construction site' },
+  { src: '/images/3.jpg', alt: 'Industrial Generator Installation', hint: 'industrial generator' },
+  { src: '/images/1.jpg', alt: 'Commercial Power Solution', hint: 'commercial building' },
+  { src: '/images/2.jpg', alt: 'Residential Backup System', hint: 'residential generator' },
+  { src: '/images/3.jpg', alt: 'Large Scale Power Plant', hint: 'power plant' },
+  { src: '/images/1.jpg', alt: 'Generator Maintenance', hint: 'generator maintenance' },
+  { src: '/images/2.jpg', alt: 'Site Assessment', hint: 'construction site' },
 ];
 
 export default function ProjectsSection() {
@@ -21,19 +22,19 @@ export default function ProjectsSection() {
         </div>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <div key={index} className="group relative h-64 rounded-lg overflow-hidden shadow-md">
-              <Image 
-                src={project.src} 
-                fill
-                style={{ objectFit: 'cover' }}
-                alt={project.alt} 
-                className="transition-transform duration-300 group-hover:scale-105"
-                data-ai-hint={project.hint}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-4 flex flex-col justify-end">
-                <p className="text-white text-lg font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">{project.alt}</p>
-              </div>
-            </div>
+            <Card key={index} className="group relative h-64 overflow-hidden rounded-lg shadow-md">
+                <Image
+                    src={project.src}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    alt={project.alt}
+                    className="transition-transform duration-300 group-hover:scale-105"
+                    data-ai-hint={project.hint}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-4 flex flex-col justify-end">
+                    <p className="text-white text-lg font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">{project.alt}</p>
+                </div>
+            </Card>
           ))}
         </div>
       </div>
