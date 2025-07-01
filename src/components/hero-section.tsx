@@ -5,12 +5,13 @@ export default function HeroSection() {
   return (
     <section id="home" className="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center text-white">
       <div className="absolute inset-0 bg-black/50 z-10" />
-      <Image 
-        src="/images/hero.jpg" 
-        layout="fill" 
-        objectFit="cover" 
-        alt="Hero background with a large diesel generator" 
+      <Image
+        src="/images/1.jpg"
+        fill
+        style={{ objectFit: 'cover' }}
+        alt="Hero background with a large diesel generator"
         className="z-0"
+        priority
       />
       <div className="container relative z-20 px-4">
         <h1 className="text-4xl md:text-6xl font-extrabold font-headline tracking-tight">

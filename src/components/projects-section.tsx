@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
 const projects = [
-  { src: '/images/project-1.jpg', alt: 'Industrial Generator Installation' },
-  { src: '/images/project-2.jpg', alt: 'Commercial Power Solution' },
-  { src: '/images/project-3.jpg', alt: 'Residential Backup System' },
-  { src: '/images/project-4.jpg', alt: 'Large Scale Power Plant' },
-  { src: '/images/project-5.jpg', alt: 'Generator Maintenance' },
-  { src: '/images/project-6.jpg', alt: 'Site Assessment' },
+  { src: '/images/1.jpg', alt: 'Industrial Generator Installation' },
+  { src: '/images/2.jpg', alt: 'Commercial Power Solution' },
+  { src: '/images/3.jpg', alt: 'Residential Backup System' },
+  { src: '/images/4.jpg', alt: 'Large Scale Power Plant' },
+  { src: '/images/5.jpg', alt: 'Generator Maintenance' },
+  { src: '/images/6.jpg', alt: 'Site Assessment' },
 ];
 
 export default function ProjectsSection() {

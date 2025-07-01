@@ -18,7 +18,7 @@ export default function AboutSection() {
             </p>
           </div>
           <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
-              <Image src="/generator.png" layout="fill" objectFit="contain" alt="Cooper Corp 5 kVA diesel generator" />
+              <Image src="/generator.png" fill style={{ objectFit: 'contain' }} alt="Cooper Corp 5 kVA diesel generator" />
           </div>
         </div>
       </div>
