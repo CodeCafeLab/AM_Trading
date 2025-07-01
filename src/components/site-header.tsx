@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetDescription } from '@/components/ui/sheet';
 import { Menu, Zap } from 'lucide-react';
 
 const navLinks = [
@@ -43,7 +43,11 @@ export default function SiteHeader() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
-                <div className="flex flex-col space-y-4 p-4 mt-8">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Menu</SheetTitle>
+                  <SheetDescription className="sr-only">Main navigation menu</SheetDescription>
+                </SheetHeader>
+                <div className="flex flex-col space-y-4 mt-4">
                   {navLinks.map((link) => (
                     <Link
                       key={link.href}
