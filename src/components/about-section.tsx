@@ -18,7 +18,7 @@ export default function AboutSection() {
             </p>
           </div>
           <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
-              <Image src="https://placehold.co/600x400.png" layout="fill" objectFit="cover" alt="Team meeting about a project" data-ai-hint="team meeting" />
+              <Image src="/generator.png" layout="fill" objectFit="contain" alt="Cooper Corp 5 kVA diesel generator" />
           </div>
         </div>
       </div>
