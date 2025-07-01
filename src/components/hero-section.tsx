@@ -6,7 +6,8 @@ export default function HeroSection() {
     <section id="home" className="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center text-white">
       <div className="absolute inset-0 bg-black/50 z-10" />
       <Image
-        src="/images/1.jpg"
+        src="https://placehold.co/1920x1080.png"
+        data-ai-hint="diesel generator"
         fill
         style={{ objectFit: 'cover' }}
         alt="Hero background with a large diesel generator"
