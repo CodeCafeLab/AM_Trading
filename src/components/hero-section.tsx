@@ -6,12 +6,11 @@ export default function HeroSection() {
     <section id="home" className="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center text-white">
       <div className="absolute inset-0 bg-black/50 z-10" />
       <Image 
-        src="https://placehold.co/1920x1080.png" 
+        src="/images/hero.jpg" 
         layout="fill" 
         objectFit="cover" 
         alt="Hero background with a large diesel generator" 
         className="z-0"
-        data-ai-hint="power generator"
       />
       <div className="container relative z-20 px-4">
         <h1 className="text-4xl md:text-6xl font-extrabold font-headline tracking-tight">
