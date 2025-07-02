@@ -22,23 +22,23 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24">
+    <section id="contact" className="py-26 md:py-24">
       <div className="container px-4">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Contact Us</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
             Have a question or need a quote? Fill out the form below and we'll get back to you shortly.
           </p>
         </div>
-        <div className="mt-12 max-w-xl mx-auto">
-          <Card className="shadow-lg">
-            <CardContent className="p-6">
-              <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="mt-16 max-w-xl mx-auto">
+          <Card className="shadow-lg border-border/50">
+            <CardContent className="p-8">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <Input name="name" placeholder="Your Name" required />
                 <Input name="email" type="email" placeholder="Your Email" required />
                 <Textarea name="message" placeholder="Your Message" rows={5} required />
-                <Button type="submit" className="w-full font-bold">
-                  Send Message <ArrowRight className="ml-2 h-4 w-4" />
+                <Button type="submit" className="w-full font-bold text-lg py-6">
+                  Send Message <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </form>
             </CardContent>
