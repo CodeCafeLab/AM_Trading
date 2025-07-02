@@ -82,4 +82,8 @@
   body {
     @apply bg-background text-foreground;
   }
+  .container {
+    padding: 0 40px;
+    max-width: 100% !important;
+}
 }

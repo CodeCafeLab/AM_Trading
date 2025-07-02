@@ -33,7 +33,7 @@ export default function HeroSection() {
           <Button
             size="lg"
             variant="outline"
-            className="font-bold border-white text-lg hover:bg-white text-primary"
+            className="font-bold border-white text-lg bg-transparent hover:bg-white text-white hover:text-primary"
             onClick={() => setIsOpen(true)}
           >
             Get a Quote

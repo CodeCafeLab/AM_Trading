@@ -3,12 +3,12 @@ import a from './../images/1.jpg';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-12 md:py-16">
+    <section id="about" className="py-8 md:py-12">
       <div className="container px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="text-left">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary text-center">About Us</h2>
-            <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary mb-6">About Us</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed max-w-xl mx-auto md:mx-0">
               <p>
                 AM Trading &amp; Co is a trusted and experienced company, proudly serving in the diesel generator industry for over 10 years. We specialize in sales, installation, and complete technical support of diesel generators, catering to a wide range of clients across Rajasthan and other parts of India.
               </p>
@@ -20,9 +20,6 @@ export default function AboutSection() {
               </p>
               <p>
                 We are proud to be an authorized dealer of Cooper Corporation, a renowned manufacturer of high-performance diesel and gas gensets, engines, and tractors. This partnership allows us to offer our clients advanced, eco-friendly, and reliable power solutions backed by Cooper's century-long legacy of innovation and excellence.
-              </p>
-               <p>
-                Whether it’s for residential, commercial, or industrial use, our mission is to provide dependable power backup systems that our clients can count on. With a commitment to transparency, timeliness, and customer satisfaction, we aim to be your trusted partner in power solutions.
               </p>
             </div>
           </div>

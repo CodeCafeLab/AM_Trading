@@ -5,10 +5,14 @@ import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
 import { QuoteSheetProvider } from '@/context/quote-sheet-context';
 import QuoteSheet from '@/components/quote-sheet';
+import WhatsAppIcon from '@/components/whatsapp-icon';
 
 export const metadata: Metadata = {
-  title: 'PowerServe Portfolio',
+  title: 'AM Trading & Co - Power Solutions',
   description: 'Trusted provider of diesel generator sales, installation, and support.',
+  icons: {
+    icon: '/logo.jpg',
+  },
 };
 
 export default function RootLayout({
@@ -32,6 +36,7 @@ export default function RootLayout({
           </div>
           <QuoteSheet />
           <Toaster />
+          <WhatsAppIcon />
         </QuoteSheetProvider>
       </body>
     </html>

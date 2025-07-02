@@ -35,7 +35,7 @@ export default function ServicesSection({ limit, showButton = false }: { limit?:
   const displayedServices = limit ? services.slice(0, limit) : services;
 
   return (
-    <section id="services" className="py-12 md:py-16 bg-background">
+    <section id="services" className="py-8 md:py-12 bg-background">
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Our Services</h2>
@@ -45,8 +45,8 @@ export default function ServicesSection({ limit, showButton = false }: { limit?:
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {displayedServices.map((service, index) => (
-            <Card key={index} className="text-left hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col bg-card border">
-              <CardHeader className='items-start'>
+            <Card key={index} className="text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col bg-card border">
+              <CardHeader className='items-center'>
                 <div className="bg-primary/10 p-4 rounded-full w-fit">
                   {service.icon}
                 </div>

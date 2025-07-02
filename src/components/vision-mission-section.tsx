@@ -2,21 +2,21 @@ import { Eye, Target } from 'lucide-react';
 
 export default function VisionMissionSection() {
   return (
-    <section className="py-12 md:py-16 bg-secondary">
+    <section className="py-8 md:py-12 bg-secondary">
       <div className="container px-4">
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="flex flex-col space-y-4 text-left">
+          <div className="flex flex-col space-y-4 text-center md:text-left items-center md:items-start">
             <div className="flex items-center space-x-4">
               <div className="p-3 bg-primary/10 rounded-full">
                 <Eye className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold font-headline">Our Vision</h3>
             </div>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed max-w-md">
               To be a leading provider of reliable and innovative power solutions across India, empowering industries, businesses, and homes with uninterrupted energy through trusted technology and exceptional service.
             </p>
           </div>
-          <div className="flex flex-col space-y-4 text-left">
+          <div className="flex flex-col space-y-4 text-center md:text-left items-center md:items-start">
               <div className="flex items-center space-x-4">
               <div className="p-3 bg-primary/10 rounded-full">
                 <Target className="h-8 w-8 text-primary" />

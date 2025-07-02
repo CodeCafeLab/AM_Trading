@@ -26,7 +26,7 @@ const features = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section id="why-us" className="py-12 md:py-16 bg-secondary">
+    <section id="why-us" className="py-8 md:py-12 bg-secondary">
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Why Choose Us?</h2>
@@ -36,8 +36,8 @@ export default function WhyChooseUsSection() {
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
-            <Card key={index} className="text-left hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col bg-card border">
-              <CardHeader className='items-start'>
+            <Card key={index} className="text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col bg-card border">
+              <CardHeader className='items-center'>
                 <div className="bg-primary/10 p-4 rounded-full w-fit">
                   {feature.icon}
                 </div>
