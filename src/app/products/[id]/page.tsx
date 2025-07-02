@@ -23,8 +23,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
     .filter(s => s.length > 0);
 
   return (
-    <section className="py-12 md:py-16 bg-background">
-      <div className="container px-4">
+    <section className="py-8 md:py-12 bg-background">
+      <div className="container">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
             <Button asChild variant="outline" className="text-sm">
@@ -37,7 +37,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Image Column */}
-            <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-lg sticky top-24">
+            <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-lg md:sticky top-24">
               <Image
                 src={product.src}
                 data-ai-hint={product.hint}

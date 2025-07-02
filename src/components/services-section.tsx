@@ -36,7 +36,7 @@ export default function ServicesSection({ limit, showButton = false }: { limit?:
 
   return (
     <section id="services" className="py-8 md:py-12 bg-background">
-      <div className="container px-4">
+      <div className="container">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Our Services</h2>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">

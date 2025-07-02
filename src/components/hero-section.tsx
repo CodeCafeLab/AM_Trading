@@ -19,7 +19,7 @@ export default function HeroSection() {
         alt="Hero background with a large diesel generator"
         priority
       />
-      <div className="container relative z-20 px-4">
+      <div className="container relative z-20">
         <h1 className="text-5xl md:text-7xl font-extrabold font-headline tracking-tight [text-shadow:0_4px_8px_rgba(0,0,0,0.4)]">
           Reliable Power Solutions
         </h1>

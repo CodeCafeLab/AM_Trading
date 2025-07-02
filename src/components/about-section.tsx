@@ -4,7 +4,7 @@ import a from './../images/1.jpg';
 export default function AboutSection() {
   return (
     <section id="about" className="py-8 md:py-12">
-      <div className="container px-4">
+      <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary mb-6">About Us</h2>
