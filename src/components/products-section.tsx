@@ -35,7 +35,7 @@ export default function ProductsSection({ limit, showButton = false }: ProductsS
                   data-ai-hint={product.hint}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-4 flex flex-col justify-end">
-                  <p className="text-white text-lg font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white text-lg font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 mb-2">
                     {product.title}
                   </p>
                 </div>
