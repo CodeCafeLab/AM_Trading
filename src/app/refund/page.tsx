@@ -1,7 +1,7 @@
 export default function RefundPage() {
   return (
     <div className="container py-12 md:py-16">
-      <div className="prose prose-invert max-w-4xl mx-auto">
+      <div className="prose max-w-4xl mx-auto">
         <h1 className="text-center">Refund Policy</h1>
         <p className="text-center">Last updated: {new Date().toLocaleDateString()}</p>
         <p>

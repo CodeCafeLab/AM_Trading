@@ -37,7 +37,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Image Column */}
-            <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-lg md:sticky top-24">
+            <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src={product.src}
                 data-ai-hint={product.hint}
@@ -50,16 +50,16 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
 
             {/* Details Column */}
             <div className="flex flex-col space-y-6">
-              <h1 className="text-3xl md:text-4xl font-bold font-headline text-primary">
+              <h1 className="text-2xl md:text-4xl font-bold font-headline text-primary">
                 {product.title}
               </h1>
               
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 {product.description}
               </p>
 
               <div className="border-t border-border pt-6">
-                <h2 className="text-2xl font-bold font-headline text-foreground mb-4">
+                <h2 className="text-xl md:text-2xl font-bold font-headline text-foreground mb-4">
                   Solution Highlights
                 </h2>
                 <ul className="space-y-3">
