@@ -23,31 +23,27 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center">
+      <div className="container flex h-20 items-center justify-between">
         {/* Left: Logo */}
-        <div className="flex-1 flex justify-start">
-          <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src={logo}
-           
-              alt="AM Trading & Co Logo"
-              className="h-12 w-auto bg-transparent"
-            />
-
-          </Link>
-        </div>
+        <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src={logo}
+            alt="AM Trading & Co Logo"
+            className="h-12 w-auto"
+          />
+        </Link>
 
         {/* Center: Navigation Links (Desktop) */}
-        <nav className="hidden md:flex flex-1 justify-center items-center space-x-8 text-base font-medium">
+        <nav className="hidden md:flex items-center space-x-6 text-lg font-medium">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary">
+            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary whitespace-nowrap">
               {link.label}
             </Link>
           ))}
         </nav>
 
         {/* Right: Quote Button & Hamburger (Mobile) */}
-        <div className="flex-1 flex justify-end items-center gap-2">
+        <div className="flex items-center gap-2">
           <Button
             className="hidden md:inline-flex"
             onClick={() => setQuoteSheetOpen(true)}
