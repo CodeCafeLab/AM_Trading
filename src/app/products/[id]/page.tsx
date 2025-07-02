@@ -2,14 +2,16 @@
 
 import { products } from '@/data/products';
 import Image from 'next/image';
-import { notFound } from 'next/navigation';
+import { notFound, useParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { useQuoteSheet } from '@/context/quote-sheet-context';
 import { CheckCircle, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const product = products.find((p) => p.id === params.id);
+export default function ProductDetailPage() {
+  const params = useParams();
+  const id = Array.isArray(params.id) ? params.id[0] : params.id;
+  const product = products.find((p) => p.id === id);
   const { setIsOpen } = useQuoteSheet();
 
   if (!product) {
