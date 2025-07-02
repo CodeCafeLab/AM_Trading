@@ -45,9 +45,9 @@ export default function ServicesSection({ limit, showButton = false }: { limit?:
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {displayedServices.map((service, index) => (
-            <Card key={index} className="text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col bg-card border">
-              <CardHeader>
-                <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
+            <Card key={index} className="text-left hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col bg-card border">
+              <CardHeader className='items-start'>
+                <div className="bg-primary/10 p-4 rounded-full w-fit">
                   {service.icon}
                 </div>
                 <CardTitle className="font-headline pt-4">{service.title}</CardTitle>

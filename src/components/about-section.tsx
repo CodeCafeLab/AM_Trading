@@ -6,8 +6,8 @@ export default function AboutSection() {
     <section id="about" className="py-12 md:py-16">
       <div className="container px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">About Us</h2>
+          <div className="text-left">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary text-center">About Us</h2>
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 AM Trading &amp; Co is a trusted and experienced company, proudly serving in the diesel generator industry for over 10 years. We specialize in sales, installation, and complete technical support of diesel generators, catering to a wide range of clients across Rajasthan and other parts of India.

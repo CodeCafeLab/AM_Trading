@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import Image from 'next/image';
+import logo from './../images/logo.jpg'
 
 const policyLinks = [
   { href: '/terms', label: 'Terms & Conditions' },
@@ -16,7 +17,7 @@ export default function SiteFooter() {
           {/* Column 1: Logo and About */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <Link href="/" className="flex items-center mb-4">
-              <Image src="/logo.png" width={150} height={50} alt="AM Trading & Co Logo" className="h-12 w-auto" />
+              <Image src={logo} width={150} height={50} alt="AM Trading & Co Logo" className="h-12 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground">
               Your Trusted Partner in Power Solutions for over a decade.

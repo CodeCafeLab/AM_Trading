@@ -36,9 +36,9 @@ export default function WhyChooseUsSection() {
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
-            <Card key={index} className="text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col bg-card border">
-              <CardHeader>
-                <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
+            <Card key={index} className="text-left hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col bg-card border">
+              <CardHeader className='items-start'>
+                <div className="bg-primary/10 p-4 rounded-full w-fit">
                   {feature.icon}
                 </div>
                 <CardTitle className="font-headline pt-4 text-xl">{feature.title}</CardTitle>

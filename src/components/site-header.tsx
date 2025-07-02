@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 import { useQuoteSheet } from '@/context/quote-sheet-context';
+import logo from './../images/logo.jpg'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -26,7 +27,7 @@ export default function SiteHeader() {
         {/* Left: Logo */}
         <div className="flex-1 flex justify-start">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/logo.png" width={120} height={40} alt="AM Trading & Co Logo" className="h-10 w-auto" />
+            <Image src={logo} width={150} height={50} alt="AM Trading & Co Logo" className="h-12 w-auto" />
           </Link>
         </div>
 
