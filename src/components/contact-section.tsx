@@ -22,10 +22,10 @@ export default function ContactSection() {
             Have a question or need a quote? Reach out to us through the form below or contact us directly.
           </p>
         </div>
-        <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-primary/10 rounded-full w-fit mt-1">
+        <div className="mt-12 grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <div className="flex flex-col items-center text-center gap-2">
+              <div className="p-3 bg-primary/10 rounded-full w-fit">
                   <MapPin className="w-6 h-6 text-primary" />
               </div>
               <div>
@@ -33,8 +33,8 @@ export default function ContactSection() {
                 <p className="text-muted-foreground">123 Power Lane, Jaipur, Rajasthan, 302001, India</p>
               </div>
             </div>
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-primary/10 rounded-full w-fit mt-1">
+            <div className="flex flex-col items-center text-center gap-2">
+              <div className="p-3 bg-primary/10 rounded-full w-fit">
                   <Mail className="w-6 h-6 text-primary" />
               </div>
               <div>
@@ -42,8 +42,8 @@ export default function ContactSection() {
                 <a href="mailto:contact@amtrading.com" className="text-muted-foreground hover:text-primary">contact@amtrading.com</a>
               </div>
             </div>
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-primary/10 rounded-full w-fit mt-1">
+            <div className="flex flex-col items-center text-center gap-2">
+              <div className="p-3 bg-primary/10 rounded-full w-fit">
                   <Phone className="w-6 h-6 text-primary" />
               </div>
               <div>

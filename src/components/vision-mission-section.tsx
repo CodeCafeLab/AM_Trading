@@ -23,7 +23,7 @@ export default function VisionMissionSection() {
               </div>
               <h3 className="text-2xl font-bold font-headline">Our Mission</h3>
             </div>
-            <ul className="list-disc list-inside text-muted-foreground space-y-2 leading-relaxed text-left max-w-md mx-auto">
+            <ul className="list-disc list-inside text-muted-foreground space-y-2 leading-relaxed text-center max-w-md mx-auto">
               <li>To deliver high-quality diesel generator solutions with complete installation and technical support.</li>
               <li>To build lasting relationships with our customers through professionalism, transparency, and timely service.</li>
               <li>To continuously upgrade our offerings by partnering with reputed manufacturers like Cooper Corporation, ensuring access to the latest and most efficient power technologies.</li>

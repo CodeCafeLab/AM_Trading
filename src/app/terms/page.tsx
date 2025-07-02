@@ -2,8 +2,8 @@ export default function TermsPage() {
   return (
     <div className="container py-12 md:py-16">
       <div className="prose prose-invert max-w-4xl mx-auto">
-        <h1>Terms & Conditions</h1>
-        <p>Last updated: {new Date().toLocaleDateString()}</p>
+        <h1 className="text-center">Terms & Conditions</h1>
+        <p className="text-center">Last updated: {new Date().toLocaleDateString()}</p>
         <p>
           Please read these terms and conditions carefully before using Our
           Service.

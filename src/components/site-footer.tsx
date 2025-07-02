@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Zap, MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
+import Image from 'next/image';
 
 const policyLinks = [
   { href: '/terms', label: 'Terms & Conditions' },
@@ -14,9 +15,8 @@ export default function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1: Logo and About */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Zap className="h-8 w-8 text-primary" />
-              <span className="font-bold font-headline text-xl">AM Trading & Co</span>
+            <Link href="/" className="flex items-center mb-4">
+              <Image src="/logo.png" width={150} height={50} alt="AM Trading & Co Logo" className="h-12 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground">
               Your Trusted Partner in Power Solutions for over a decade.

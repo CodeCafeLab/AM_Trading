@@ -4,7 +4,12 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { projects as allProjects } from '@/data/projects';
 
-export default function ProjectsSection({ limit, showButton = false }: { limit?: number; showButton?: boolean }) {
+type ProjectsSectionProps = {
+  limit?: number;
+  showButton?: boolean;
+};
+
+export default function ProjectsSection({ limit, showButton = false }: ProjectsSectionProps) {
   const projects = limit ? allProjects.slice(0, limit) : allProjects;
 
   return (
@@ -16,12 +21,13 @@ export default function ProjectsSection({ limit, showButton = false }: { limit?:
             A showcase of our successfully completed projects, demonstrating our commitment to quality and excellence.
           </p>
         </div>
+
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {projects.map((project) => (
-            <Link key={project.id} href={`/projects/${project.id}`}>
-              <Card className="group relative h-64 overflow-hidden rounded-lg shadow-md block">
+            <Link key={project.id} href={`/projects/${project.id}`} className="block">
+              <Card className="group relative h-64 overflow-hidden rounded-lg shadow-md">
                 <Image
-                  src={`https://placehold.co/400x300.png`}
+                  src={project.src}
                   fill
                   style={{ objectFit: 'cover' }}
                   alt={project.alt}
@@ -37,6 +43,7 @@ export default function ProjectsSection({ limit, showButton = false }: { limit?:
             </Link>
           ))}
         </div>
+
         {showButton && (
           <div className="mt-12 text-center">
             <Button asChild size="lg" className="font-bold">

@@ -2,8 +2,8 @@ export default function PrivacyPage() {
   return (
     <div className="container py-12 md:py-16">
       <div className="prose prose-invert max-w-4xl mx-auto">
-        <h1>Privacy Policy</h1>
-        <p>Last updated: {new Date().toLocaleDateString()}</p>
+        <h1 className="text-center">Privacy Policy</h1>
+        <p className="text-center">Last updated: {new Date().toLocaleDateString()}</p>
         <p>
           This Privacy Policy describes Our policies and procedures on the
           collection, use and disclosure of Your information when You use the

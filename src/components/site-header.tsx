@@ -2,9 +2,10 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
-import { Menu, Zap } from 'lucide-react';
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle, SheetDescription } from '@/components/ui/sheet';
+import { Menu } from 'lucide-react';
 import { useQuoteSheet } from '@/context/quote-sheet-context';
 
 const navLinks = [
@@ -25,8 +26,7 @@ export default function SiteHeader() {
         {/* Left: Logo */}
         <div className="flex-1 flex justify-start">
           <Link href="/" className="flex items-center space-x-2">
-            <Zap className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline">AM Trading & Co</span>
+            <Image src="/logo.png" width={120} height={40} alt="AM Trading & Co Logo" className="h-10 w-auto" />
           </Link>
         </div>
 
@@ -57,6 +57,8 @@ export default function SiteHeader() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
+                <SheetTitle className="sr-only">Main Menu</SheetTitle>
+                <SheetDescription className="sr-only">Navigation links for the website.</SheetDescription>
                 <div className="flex flex-col space-y-4 mt-4">
                   {navLinks.map((link) => (
                     <SheetClose asChild key={link.href}>
