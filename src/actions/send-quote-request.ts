@@ -36,7 +36,7 @@ export async function sendQuoteRequest(
   try {
     await transporter.sendMail({
       from: '"AM Trading Website" <testcode@codecafelab.in>',
-      to: 'testcode@codecafelab.in', // The recipient email address
+      to: 'codecafelabtechnologies@gmail.com', // The recipient email address
       subject: 'New Quote Request from Website',
       html: `
         <h2>New Quote Request</h2>
