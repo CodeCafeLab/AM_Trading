@@ -1,7 +1,7 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
-import { useEffect, useRef } from 'react';
+import { useFormStatus } from 'react-dom';
+import { useEffect, useRef, useActionState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -28,7 +28,7 @@ export function QuoteForm() {
   const formRef = useRef<HTMLFormElement>(null);
 
   const initialState: QuoteRequestState = { message: null, errors: {}, success: false };
-  const [state, dispatch] = useFormState(sendQuoteRequest, initialState);
+  const [state, dispatch] = useActionState(sendQuoteRequest, initialState);
 
   const form = useForm<z.infer<typeof QuoteRequestSchema>>({
     resolver: zodResolver(QuoteRequestSchema),
