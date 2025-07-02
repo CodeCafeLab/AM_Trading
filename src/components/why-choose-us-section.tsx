@@ -26,15 +26,15 @@ const features = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section id="why-us" className="py-16 md:py-24 bg-background">
+    <section id="why-us" className="py-12 md:py-16 bg-secondary">
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Why Choose Us?</h2>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
             We are committed to delivering excellence and building lasting relationships with our clients through reliable power solutions and exceptional service.
           </p>
         </div>
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <Card key={index} className="text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col bg-card border">
               <CardHeader>

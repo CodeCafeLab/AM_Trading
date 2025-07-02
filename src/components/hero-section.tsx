@@ -1,14 +1,17 @@
+'use client';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import a from './../images/1.jpg';
+import { useQuoteSheet } from '@/context/quote-sheet-context';
 
 export default function HeroSection() {
+  const { setIsOpen } = useQuoteSheet();
+
   return (
-    <section id="home" className="py-26 relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white">
+    <section id="home" className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white">
       <div className="absolute inset-0 bg-black/60 z-10" />
       <Image
-        src={a}
+        src="https://placehold.co/1920x1080.png"
         data-ai-hint="diesel generator"
         fill
         style={{ objectFit: 'cover' }}
@@ -26,8 +29,13 @@ export default function HeroSection() {
           <Button asChild size="lg" className="font-bold text-lg">
             <Link href="/services">Our Services</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="font-bold border-white text-white text-lg hover:bg-white hover:text-primary">
-            <Link href="/contact">Get a Quote</Link>
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="font-bold border-white text-white text-lg hover:bg-white hover:text-primary"
+            onClick={() => setIsOpen(true)}
+          >
+            Get a Quote
           </Button>
         </div>
       </div>

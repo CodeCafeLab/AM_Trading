@@ -1,12 +1,11 @@
 import Image from 'next/image';
-import a from './../images/1.jpg';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-26 md:py-24">
+    <section id="about" className="py-12 md:py-16">
       <div className="container px-4">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="text-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">About Us</h2>
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -27,7 +26,13 @@ export default function AboutSection() {
             </div>
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-            <Image src={a} data-ai-hint="cooper generator" fill style={{ objectFit: 'contain' }} alt="Cooper Corp 5 kVA diesel generator" />
+            <Image 
+              src="https://placehold.co/600x400.png" 
+              data-ai-hint="cooper generator" 
+              fill 
+              style={{ objectFit: 'cover' }} 
+              alt="Cooper Corp 5 kVA diesel generator" 
+            />
           </div>
         </div>
       </div>

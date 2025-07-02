@@ -35,15 +35,15 @@ export default function ServicesSection({ limit, showButton = false }: { limit?:
   const displayedServices = limit ? services.slice(0, limit) : services;
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-secondary">
+    <section id="services" className="py-12 md:py-16 bg-background">
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Our Services</h2>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
             From sales to support, we offer a comprehensive range of services to meet all your power backup needs.
           </p>
         </div>
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {displayedServices.map((service, index) => (
             <Card key={index} className="text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col bg-card border">
               <CardHeader>

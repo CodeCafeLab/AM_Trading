@@ -1,36 +1,57 @@
-'use client';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { ArrowRight } from 'lucide-react';
-import { useToast } from "@/hooks/use-toast"
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 export default function ContactSection() {
-  const { toast } = useToast()
-
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Here you would typically handle form submission, e.g., send data to an API
+    // This form is for display purposes. The quote request logic is in the slide-out sheet.
     console.log('Form submitted');
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We will get back to you shortly.",
-    })
     const form = event.target as HTMLFormElement;
     form.reset();
   };
 
   return (
-    <section id="contact" className="py-26 md:py-24">
+    <section id="contact" className="py-12 md:py-16">
       <div className="container px-4">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Contact Us</h2>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Have a question or need a quote? Fill out the form below and we'll get back to you shortly.
+          <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+            Have a question or need a quote? Reach out to us through the form below or contact us directly.
           </p>
         </div>
-        <div className="mt-16 max-w-xl mx-auto">
+        <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
+          <div className="space-y-6">
+            <div className="flex items-start gap-4">
+              <div className="p-3 bg-primary/10 rounded-full w-fit mt-1">
+                  <MapPin className="w-6 h-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg">Our Address</h3>
+                <p className="text-muted-foreground">123 Power Lane, Jaipur, Rajasthan, 302001, India</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="p-3 bg-primary/10 rounded-full w-fit mt-1">
+                  <Mail className="w-6 h-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg">Email Us</h3>
+                <a href="mailto:contact@amtrading.com" className="text-muted-foreground hover:text-primary">contact@amtrading.com</a>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="p-3 bg-primary/10 rounded-full w-fit mt-1">
+                  <Phone className="w-6 h-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg">Call Us</h3>
+                <a href="tel:+919876543210" className="text-muted-foreground hover:text-primary">+91 987 654 3210</a>
+              </div>
+            </div>
+          </div>
           <Card className="shadow-lg border-border/50">
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -38,7 +59,7 @@ export default function ContactSection() {
                 <Input name="email" type="email" placeholder="Your Email" required />
                 <Textarea name="message" placeholder="Your Message" rows={5} required />
                 <Button type="submit" className="w-full font-bold text-lg py-6">
-                  Send Message <ArrowRight className="ml-2 h-5 w-5" />
+                  Send Message
                 </Button>
               </form>
             </CardContent>

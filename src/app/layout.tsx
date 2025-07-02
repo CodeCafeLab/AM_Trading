@@ -3,6 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
+import { QuoteSheetProvider } from '@/context/quote-sheet-context';
+import QuoteSheet from '@/components/quote-sheet';
 
 export const metadata: Metadata = {
   title: 'PowerServe Portfolio',
@@ -22,12 +24,15 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased bg-background">
-        <div className="flex flex-col min-h-screen">
-          <SiteHeader />
-          <main className="flex-grow">{children}</main>
-          <SiteFooter />
-        </div>
-        <Toaster />
+        <QuoteSheetProvider>
+          <div className="flex flex-col min-h-screen">
+            <SiteHeader />
+            <main className="flex-grow">{children}</main>
+            <SiteFooter />
+          </div>
+          <QuoteSheet />
+          <Toaster />
+        </QuoteSheetProvider>
       </body>
     </html>
   );
