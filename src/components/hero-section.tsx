@@ -30,10 +30,10 @@ export default function HeroSection() {
           <Button asChild size="lg" className="font-bold text-lg">
             <Link href="/services">Our Services</Link>
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="font-bold border-white text-white text-lg hover:bg-white hover:text-primary"
+          <Button
+            size="lg"
+            variant="outline"
+            className="font-bold border-white text-lg hover:bg-white text-primary"
             onClick={() => setIsOpen(true)}
           >
             Get a Quote

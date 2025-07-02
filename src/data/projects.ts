@@ -1,3 +1,4 @@
+
 import a from './../images/1.jpg';
 import b from './../images/2.jpg';
 import c from './../images/3.jpg';
@@ -144,7 +145,7 @@ export const projects = [
     details: 'This versatile solution provides on-demand power wherever it\'s needed. The van is equipped with a soundproofed 82.5 kVA generator, distribution panels, and ample cabling for any remote power requirement.'
   },
   { 
-    id: '8',
+    id: '16',
     title: 'Telecom Tower Backup',
     src: h, 
     alt: 'Emergency Power Setup', 
