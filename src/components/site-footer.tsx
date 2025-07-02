@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import Image from 'next/image';
-import logo from './../images/logo.jpg';
+import logo from './../images/logo_transparent.png';
 
 const policyLinks = [
   { href: '/terms', label: 'Terms & Conditions' },

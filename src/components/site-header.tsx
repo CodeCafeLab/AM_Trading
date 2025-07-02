@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 import { useQuoteSheet } from '@/context/quote-sheet-context';
-import logo from './../images/logo.jpg'
+import logo from './../images/logo_transparent.png'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -27,7 +27,13 @@ export default function SiteHeader() {
         {/* Left: Logo */}
         <div className="flex-1 flex justify-start">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src={logo} width={150} height={50} alt="AM Trading & Co Logo" className="h-12 w-auto" />
+            <Image
+              src={logo}
+           
+              alt="AM Trading & Co Logo"
+              className="h-12 w-auto bg-transparent"
+            />
+
           </Link>
         </div>
 
@@ -42,8 +48,8 @@ export default function SiteHeader() {
 
         {/* Right: Quote Button & Hamburger (Mobile) */}
         <div className="flex-1 flex justify-end items-center gap-2">
-          <Button 
-            className="hidden md:inline-flex" 
+          <Button
+            className="hidden md:inline-flex"
             onClick={() => setQuoteSheetOpen(true)}
           >
             Get a Quote
@@ -71,7 +77,7 @@ export default function SiteHeader() {
                       </Link>
                     </SheetClose>
                   ))}
-                  <Button 
+                  <Button
                     onClick={() => {
                       setIsMenuOpen(false);
                       setQuoteSheetOpen(true);
