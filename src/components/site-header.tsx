@@ -23,7 +23,7 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-20 items-center">
         {/* Left: Logo */}
         <div className="flex-1 flex justify-start">
           <Link href="/" className="flex items-center space-x-2">
@@ -38,7 +38,7 @@ export default function SiteHeader() {
         </div>
 
         {/* Center: Navigation Links (Desktop) */}
-        <nav className="hidden md:flex flex-1 justify-center items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex flex-1 justify-center items-center space-x-8 text-base font-medium">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="transition-colors hover:text-primary">
               {link.label}

@@ -11,7 +11,7 @@ const WhatsAppIcon = () => {
         >
             <Button
                 size="icon"
-                className="bg-[#25D366] hover:bg-[#128C7E] rounded-full w-14 h-14 shadow-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110 animate-pulse-whatsapp"
+                className="bg-[#25D366] hover:bg-[#128C7E] rounded-full w-14 h-14 shadow-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110 "
             >
                 <svg
                     role="img"
