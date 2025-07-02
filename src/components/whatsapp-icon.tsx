@@ -7,11 +7,11 @@ const WhatsAppIcon = () => {
             href="https://wa.me/918841098469?text=I%20have%20enquiry,%20please%20arrange%20a%20call%20back.%0AThanks"
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed bottom-6 right-6 z-50 group"
+            className="fixed bottom-8 right-8 z-50 group"
         >
             <Button
                 size="icon"
-                className="bg-[#25D366] hover:bg-[#128C7E] rounded-full w-14 h-14 shadow-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
+                className="bg-[#25D366] hover:bg-[#128C7E] rounded-full w-14 h-14 shadow-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110 animate-pulse-whatsapp"
             >
                 <svg
                     role="img"

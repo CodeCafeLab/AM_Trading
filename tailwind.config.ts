@@ -90,11 +90,9 @@ export default {
         },
         'pulse-whatsapp': {
           '0%, 100%': {
-            // transform: 'scale(1)',
             boxShadow: '0 0 0 0 rgba(37, 211, 102, 0.7)',
           },
           '70%': {
-            transform: 'scale(1.05)',
             boxShadow: '0 0 0 10px rgba(37, 211, 102, 0)',
           },
         },
