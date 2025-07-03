@@ -96,11 +96,16 @@ export default {
             boxShadow: '0 0 0 10px rgba(37, 211, 102, 0)',
           },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'pulse-whatsapp': 'pulse-whatsapp 2s infinite',
+        marquee: 'marquee 40s linear infinite',
       },
     },
   },

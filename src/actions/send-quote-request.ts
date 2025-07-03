@@ -48,7 +48,7 @@ export async function sendQuoteRequest(
         <p>
           Regards,<br/>
           AM Trading Team<br/>
-          📞 +91 987 654 3210
+          📞 +91 8841098469
         </p>
       `,
     });

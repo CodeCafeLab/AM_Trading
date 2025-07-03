@@ -23,7 +23,7 @@ export default function RefundPage() {
         </p>
         <h2>Contact Us</h2>
         <p>
-          If you have any questions about our Refund Policy, please contact us at contact@amtrading.com.
+          If you have any questions about our Refund Policy, please contact us at info@amtco.in.
         </p>
       </div>
     </div>

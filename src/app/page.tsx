@@ -4,6 +4,9 @@ import ServicesSection from '@/components/services-section';
 import ProductsSection from '@/components/products-section';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+import ClientsSection from '@/components/clients-section';
+import TestimonialsSection from '@/components/testimonials-section';
+import BlogPreviewSection from '@/components/blog-preview-section';
 
 export default function Home() {
   return (
@@ -12,6 +15,9 @@ export default function Home() {
       <WhyChooseUsSection />
       <ServicesSection limit={3} showButton={true} />
       <ProductsSection limit={4} showButton={true}/>
+      <ClientsSection />
+      <TestimonialsSection />
+      <BlogPreviewSection />
       <section className="py-12 md:py-16 text-center bg-secondary">
         <div className="container">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Ready to Get Started?</h2>
@@ -20,9 +26,9 @@ export default function Home() {
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="font-bold text-lg">
-              <a href="tel:+919876543210" className='flex items-center gap-2'>
+              <a href="tel:+918841098469" className='flex items-center gap-2'>
                 <Phone size={20} />
-                +91 987 654 3210
+                +91 8841098469
               </a>
             </Button>
           </div>

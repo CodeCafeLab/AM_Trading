@@ -60,7 +60,7 @@ export default function TermsPage() {
         <h2>Contact Us</h2>
         <p>
           If you have any questions about these Terms and Conditions, You can
-          contact us by email at contact@amtrading.com.
+          contact us by email at info@amtco.in.
         </p>
       </div>
     </div>

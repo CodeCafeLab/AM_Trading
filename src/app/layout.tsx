@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'AM Trading & Co - Power Solutions',
   description: 'Trusted provider of diesel generator sales, installation, and support.',
   icons: {
-    icon: '/logo.jpg',
+    icon: '/logo_transparent.png',
   },
 };
 

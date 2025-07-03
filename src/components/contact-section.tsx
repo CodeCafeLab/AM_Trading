@@ -32,7 +32,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="font-bold text-lg">Our Address</h3>
-                <p className="text-muted-foreground">123 Power Lane, Jaipur, Rajasthan, 302001, India</p>
+                <p className="text-muted-foreground">Plot No, 2 Sonu Apartment, Ashok Nagar, Niwaru Road Jaipur - 302012</p>
               </div>
             </div>
             <div className="flex flex-col items-center text-center gap-2">
@@ -41,7 +41,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="font-bold text-lg">Email Us</h3>
-                <a href="mailto:contact@amtrading.com" className="text-muted-foreground hover:text-primary">contact@amtrading.com</a>
+                <a href="mailto:info@amtco.in" className="text-muted-foreground hover:text-primary">info@amtco.in</a>
               </div>
             </div>
             <div className="flex flex-col items-center text-center gap-2">
@@ -50,7 +50,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="font-bold text-lg">Call Us</h3>
-                <a href="tel:+919876543210" className="text-muted-foreground hover:text-primary">+91 987 654 3210</a>
+                <a href="tel:+918841098469" className="text-muted-foreground hover:text-primary">+91 8841098469</a>
               </div>
             </div>
           </div>

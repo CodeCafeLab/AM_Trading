@@ -51,7 +51,7 @@ export default function PrivacyPage() {
         <h2>Contact Us</h2>
         <p>
           If you have any questions about this Privacy Policy, You can contact us
-          by email at contact@amtrading.com.
+          by email at info@amtco.in.
         </p>
       </div>
     </div>
