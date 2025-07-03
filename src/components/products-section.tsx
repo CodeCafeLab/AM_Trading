@@ -21,8 +21,6 @@ export default function ProductsSection({ limit, showButton = false }: ProductsS
             A showcase of our successfully delivered products, demonstrating our commitment to quality and excellence.
           </p>
         </div>
-        
-
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {products.map((product) => (
             <Link key={product.id} href={`/products/${product.id}`} className="block">
