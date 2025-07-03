@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import SiteHeader from '@/components/site-header';
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'AM Trading & Co - Power Solutions',
   description: 'Trusted provider of diesel generator sales, installation, and support.',
   icons: {
-    icon: '/logo_transparent.png',
+    icon: '/logo.jpg',
   },
 };
 
