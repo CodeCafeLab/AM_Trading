@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useQuoteSheet } from '@/context/quote-sheet-context';
-import heroImage from './../images/4.jpg';
+import heroImage from './../images/hero-image.png';
 
 export default function HeroSection() {
   const { setIsOpen } = useQuoteSheet();
@@ -15,7 +15,7 @@ export default function HeroSection() {
         src={heroImage}
         data-ai-hint="modern building construction"
         fill
-        style={{ objectFit: 'cover' }}
+        // style={{ objectFit: 'cover' }}
         alt="Hero background with a modern construction site"
         priority
         placeholder="blur"
