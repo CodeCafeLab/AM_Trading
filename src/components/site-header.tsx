@@ -34,9 +34,9 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center">
+      <div className="container flex h-20 items-center justify-between">
         {/* Left: Logo */}
-        <div className="flex-1 md:flex-none">
+        <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2 shrink-0">
             <Image
               src={logo}
@@ -47,23 +47,25 @@ export default function SiteHeader() {
         </div>
 
         {/* Center: Navigation Links (Desktop) */}
-        <nav className="hidden md:flex flex-1 justify-center items-center space-x-6">
-          {navLinks.map((link) => (
-            <Link 
-              key={link.href} 
-              href={link.href} 
-              className={cn(
-                "text-lg font-medium transition-colors hover:text-primary",
-                pathname === link.href ? "text-primary" : "text-muted-foreground"
-              )}
-            >
-              {link.label}
-            </Link>
-          ))}
+        <nav className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <Link 
+                key={link.href} 
+                href={link.href} 
+                className={cn(
+                  "text-base font-medium transition-colors hover:text-primary whitespace-nowrap",
+                  pathname === link.href ? "text-primary font-semibold" : "text-muted-foreground"
+                )}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </nav>
 
         {/* Right: Socials, Quote Button & Hamburger (Mobile) */}
-        <div className="flex items-center gap-2 flex-1 justify-end">
+        <div className="flex items-center gap-2">
            <div className="hidden lg:flex items-center gap-1">
                 {socialLinks.map((link) => (
                     <Button key={link.label} asChild variant="ghost" size="icon">
@@ -99,8 +101,8 @@ export default function SiteHeader() {
                       <Link
                         href={link.href}
                         className={cn(
-                          "text-lg font-medium transition-colors hover:text-primary",
-                          pathname === link.href ? "text-primary" : ""
+                          "text-base font-medium transition-colors hover:text-primary",
+                          pathname === link.href ? "text-primary font-semibold" : "text-foreground"
                         )}
                       >
                         {link.label}
