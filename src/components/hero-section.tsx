@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useQuoteSheet } from '@/context/quote-sheet-context';
+import heroImage from './../images/4.jpg';
 
 export default function HeroSection() {
   const { setIsOpen } = useQuoteSheet();
@@ -11,12 +12,13 @@ export default function HeroSection() {
     <section id="home" className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white">
       <div className="absolute inset-0 bg-black/60 z-10" />
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src={heroImage}
         data-ai-hint="modern building construction"
         fill
         style={{ objectFit: 'cover' }}
         alt="Hero background with a modern construction site"
         priority
+        placeholder="blur"
       />
       <div className="container relative z-20">
         <h1 className="text-5xl md:text-7xl font-extrabold font-headline tracking-tight [text-shadow:0_4px_8px_rgba(0,0,0,0.4)]">

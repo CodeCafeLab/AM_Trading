@@ -5,9 +5,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle, SheetDescription } from '@/components/ui/sheet';
-import { Menu, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Menu, Facebook, Twitter, Instagram } from 'lucide-react';
 import { useQuoteSheet } from '@/context/quote-sheet-context';
-import logo from './../images/logo_transparent.png'
+import logo from './../images/logo_transparent.png';
+import { usePathname } from 'next/navigation';
+import { cn } from '@/lib/utils';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -27,10 +29,11 @@ const socialLinks = [
 export default function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { setIsOpen: setQuoteSheetOpen } = useQuoteSheet();
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-24 items-center justify-between">
+      <div className="container flex h-20 items-center justify-between">
         {/* Left: Logo */}
         <Link href="/" className="flex items-center space-x-2 shrink-0">
           <Image
@@ -41,9 +44,16 @@ export default function SiteHeader() {
         </Link>
 
         {/* Center: Navigation Links (Desktop) */}
-        <nav className="hidden md:flex items-center space-x-8 text-lg font-medium">
+        <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary whitespace-nowrap">
+            <Link 
+              key={link.href} 
+              href={link.href} 
+              className={cn(
+                "text-base font-medium transition-colors hover:text-primary",
+                pathname === link.href ? "text-primary" : "text-muted-foreground"
+              )}
+            >
               {link.label}
             </Link>
           ))}
@@ -51,7 +61,7 @@ export default function SiteHeader() {
 
         {/* Right: Socials, Quote Button & Hamburger (Mobile) */}
         <div className="flex items-center gap-2">
-           <div className="hidden md:flex items-center gap-1">
+           <div className="hidden lg:flex items-center gap-1">
                 {socialLinks.map((link) => (
                     <Button key={link.label} asChild variant="ghost" size="icon">
                         <Link href={link.href} target="_blank" rel="noopener noreferrer">
@@ -85,7 +95,10 @@ export default function SiteHeader() {
                     <SheetClose asChild key={link.href}>
                       <Link
                         href={link.href}
-                        className="text-lg font-medium transition-colors hover:text-primary"
+                        className={cn(
+                          "text-lg font-medium transition-colors hover:text-primary",
+                          pathname === link.href ? "text-primary" : ""
+                        )}
                       >
                         {link.label}
                       </Link>
