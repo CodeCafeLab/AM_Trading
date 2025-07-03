@@ -1,10 +1,15 @@
+import type { StaticImageData } from 'next/image';
+import a from '../images/1.jpg';
+import b from '../images/2.jpg';
+import c from '../images/3.jpg';
+
 export type BlogPost = {
   slug: string;
   title: string;
   description: string;
   date: string;
   author: string;
-  image: string;
+  image: StaticImageData;
   hint: string;
   content: string;
 };
@@ -16,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     description: 'Don\'t get lost in the specs. Here are the five most important things to consider when selecting a diesel generator for your business or home to ensure you get the perfect fit.',
     date: 'July 15, 2024',
     author: 'Anil Kumar',
-    image: 'https://placehold.co/600x400.png',
+    image: a,
     hint: 'diesel generator control panel',
     content: `Choosing the right diesel generator is a critical decision that can impact your operational continuity and budget for years to come. With a multitude of options available, it's easy to feel overwhelmed. To simplify the process, we've broken it down into five key factors you must consider.
 
@@ -36,7 +41,7 @@ Finally, **After-Sales Support and Warranty**. A generator is a long-term invest
     description: 'Think of an AMC as health insurance for your generator. We explore why regular, professional maintenance is essential for reliability, longevity, and peace of mind.',
     date: 'June 28, 2024',
     author: 'Anima Beniwal',
-    image: 'https://placehold.co/600x400.png',
+    image: b,
     hint: 'technician generator maintenance',
     content: `Purchasing a diesel generator is the first step towards securing your power supply. However, simply owning it isn't enough. To ensure it performs flawlessly when you need it most, a proactive maintenance strategy is crucial. This is where an Annual Maintenance Contract (AMC) becomes invaluable.
 
@@ -52,7 +57,7 @@ Furthermore, regular maintenance extends the **lifespan** of your generator. Jus
     description: 'As authorized dealers, we delve into what makes Cooper Corporation generators a superior choice, from their innovative engine technology to their commitment to sustainability.',
     date: 'June 10, 2024',
     author: 'Anil Kumar',
-    image: 'https://placehold.co/600x400.png',
+    image: c,
     hint: 'eco friendly factory',
     content: `At AM Trading & Co, we are proud to be authorized dealers for Cooper Corporation, a brand synonymous with quality and innovation in the engine manufacturing industry. But what exactly gives Cooper generators their competitive edge?
 

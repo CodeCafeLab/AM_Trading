@@ -14,4 +14,8 @@ export const clients: Client[] = [
   { name: 'BSNL', logo: 'https://placehold.co/140x50.png', hint: 'bsnl logo' },
   { name: 'Airtel', logo: 'https://placehold.co/140x50.png', hint: 'airtel logo' },
   { name: 'Jio', logo: 'https://placehold.co/140x50.png', hint: 'jio logo' },
+  { name: 'State Bank of India', logo: 'https://placehold.co/140x50.png', hint: 'sbi logo' },
+  { name: 'Punjab National Bank', logo: 'https://placehold.co/140x50.png', hint: 'pnb logo' },
+  { name: 'Tata Motors', logo: 'https://placehold.co/140x50.png', hint: 'tata motors logo' },
+  { name: 'Mahindra & Mahindra', logo: 'https://placehold.co/140x50.png', hint: 'mahindra logo' },
 ];

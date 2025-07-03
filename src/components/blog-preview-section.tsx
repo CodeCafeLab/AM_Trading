@@ -2,7 +2,7 @@ import { blogPosts } from '@/data/blog';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { ArrowRight } from 'lucide-react';
 
 export default function BlogPreviewSection() {
@@ -23,12 +23,13 @@ export default function BlogPreviewSection() {
                             <Card className="overflow-hidden h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                                 <div className="relative h-56">
                                     <Image
-                                        src={post.image}
+                                        src={post.image as StaticImageData}
                                         fill
                                         style={{ objectFit: 'cover' }}
                                         alt={post.title}
                                         className="transition-transform duration-300 group-hover:scale-105"
                                         data-ai-hint={post.hint}
+                                        placeholder='blur'
                                     />
                                 </div>
                                 <CardContent className="p-6 flex flex-col flex-grow">

@@ -11,4 +11,6 @@ export const testimonials: Testimonial[] = [
     { name: 'Sanjay Verma', company: 'Site Manager, Verma Constructions', quote: 'For our remote construction site, their mobile power solution was a game-changer. Reliable, robust, and delivered right on schedule.' },
     { name: 'Dr. Meena Gupta', company: 'Hospital Administrator', quote: 'The emergency power system for our hospital is critical. AM Trading understood the stakes and delivered a solution that meets all healthcare standards. True professionals.' },
     { name: 'Sunita Agarwal', company: 'Owner, Agarwal Textiles', quote: 'Their team assessed our needs perfectly and recommended a generator that was both efficient and budget-friendly. The after-sales service has been exceptional.' },
+    { name: 'Vikram Rathore', company: 'IT Manager, Tech Solutions Ltd.', quote: 'The team\'s knowledge of data center power requirements is impressive. The N+1 system they implemented for us has been rock solid.'},
+    { name: 'Alok Jain', company: 'Proprietor, Royal Hotels', quote: 'Guest experience is everything. Thanks to AM Trading, our resort has seamless power backup. Our guests don\'t even notice when the grid fails. Superb work!'}
 ]

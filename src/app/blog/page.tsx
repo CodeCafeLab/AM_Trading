@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
+import type { StaticImageData } from 'next/image';
 
 export default function BlogPage() {
   return (
@@ -20,12 +21,13 @@ export default function BlogPage() {
                 <Card className="overflow-hidden h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                     <div className="relative h-56">
                         <Image
-                            src={post.image}
+                            src={post.image as StaticImageData}
                             fill
                             style={{ objectFit: 'cover' }}
                             alt={post.title}
                             className="transition-transform duration-300 group-hover:scale-105"
                             data-ai-hint={post.hint}
+                            placeholder='blur'
                         />
                     </div>
                     <CardContent className="p-6 flex flex-col flex-grow">

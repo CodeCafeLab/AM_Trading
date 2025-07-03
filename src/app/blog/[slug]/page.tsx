@@ -1,7 +1,7 @@
 'use client';
 
 import { blogPosts } from '@/data/blog';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { notFound, useParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calendar, User } from 'lucide-react';
@@ -47,12 +47,13 @@ export default function BlogPostPage() {
 
             <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-lg mb-8">
               <Image
-                src={post.image}
+                src={post.image as StaticImageData}
                 data-ai-hint={post.hint}
                 fill
                 style={{ objectFit: 'cover' }}
                 alt={post.title}
                 priority
+                placeholder='blur'
               />
             </div>
 
