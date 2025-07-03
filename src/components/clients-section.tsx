@@ -9,13 +9,13 @@ export default function ClientsSection() {
         <div className="relative overflow-hidden w-full bg-card rounded-xl shadow-lg p-8">
           <div className="flex animate-marquee group-hover:[animation-play-state:paused]">
             {[...clients, ...clients].map((client, index) => (
-              <div key={index} className="flex-shrink-0 mx-8 flex items-center justify-center h-20 w-44" title={client.name}>
+              <div key={index} className="flex-shrink-0 mx-8 flex items-center justify-center h-24 w-52" title={client.name}>
                 <Image
                   src={client.logo}
                   alt={client.name}
-                  width={150}
-                  height={60}
-                  className="object-contain max-h-16 w-auto"
+                  width={180}
+                  height={80}
+                  className="object-contain max-h-20 w-auto"
                   data-ai-hint={client.hint}
                 />
               </div>
