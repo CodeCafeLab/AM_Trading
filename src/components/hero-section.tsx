@@ -3,13 +3,13 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useQuoteSheet } from '@/context/quote-sheet-context';
-import heroImage from './../images/Your paragraph text.png';
+import heroImage from './../images/Your paragraph text copy.png';
 
 export default function HeroSection() {
   const { setIsOpen } = useQuoteSheet();
 
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center text-center text-white -mt-20">
+    <section id="home" className="relative h-[calc(100vh-5rem)] flex items-center justify-center text-center text-white">
       <div className="absolute inset-0 bg-black/60 z-10" />
       <Image
         src={heroImage}
