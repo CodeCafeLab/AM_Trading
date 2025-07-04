@@ -3,19 +3,19 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useQuoteSheet } from '@/context/quote-sheet-context';
-import heroImage from './../images/hero-image.png';
+import heroImage from './../images/Your paragraph text.png';
 
 export default function HeroSection() {
   const { setIsOpen } = useQuoteSheet();
 
   return (
-    <section id="home" className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white">
+    <section id="home" className="relative h-screen flex items-center justify-center text-center text-white">
       <div className="absolute inset-0 bg-black/60 z-10" />
       <Image
         src={heroImage}
         data-ai-hint="modern building construction"
         fill
-        // style={{ objectFit: 'cover' }}
+        style={{ objectFit: 'cover' }}
         alt="Hero background with a modern construction site"
         priority
         placeholder="blur"
