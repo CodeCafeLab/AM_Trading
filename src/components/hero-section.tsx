@@ -9,7 +9,7 @@ export default function HeroSection() {
   const { setIsOpen } = useQuoteSheet();
 
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center text-center text-white">
+    <section id="home" className="relative h-screen flex items-center justify-center text-center text-white -mt-20">
       <div className="absolute inset-0 bg-black/60 z-10" />
       <Image
         src={heroImage}
